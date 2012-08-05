@@ -1,0 +1,125 @@
+@charset "utf-8";
+body {
+	margin: 0px;
+	padding: 0px; background:url(../images/bg.jpg) no-repeat center top;
+}
+h1, h2, h3, h4, h5, h6, a, ul, li, span, p, form{margin:0px; padding:0px;}
+
+#wrapper{width:1000px; height:auto; margin:0 auto;}
+.container{width:1000px; height:auto; float:left; background:#FFFFFF; margin-top:40px;}
+.header{width:1000px; height:auto; float:left;}
+.top{width:1000px; height:111px; float:left;}
+.left_logo{width:249px; height:auto; float:left; padding:25px 0 0 38px;}
+.left_logo a{ text-decoration:none;}
+
+.top_right_part{width:337px; height:auto; float:right; padding-top:41px;}
+.fielld{width:300px; height:auto; float: left;}
+.fielld label{width:80px; float:right; font-family:"Myriad Pro"; font-size:14px; font-weight:normal; text-decoration:none; color:#7b7777;}
+.inp{width:200px; float:left; height:25px; border: solid 1px #d7d3d3; border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;}
+.marque{ width:1000px; height:27px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:normal; color:#000000; text-decoration:none; line-height:27px; border-top:solid 1px #343534;}
+
+.fielld label a{font-family:"Myriad Pro"; font-size:14px; font-weight:normal; text-decoration:none; color:#7b7777;}
+
+
+.navi{width:950px; height:38px; float:left; background:url(../images/navi-bg.jpg) repeat-x left top; padding-left:50px;}
+.navi ul{list-style:none;}
+.navi ul li{line-height:38px; float:left;}
+.navi ul li a{font-family:"Myriad Pro"; font-size:14px; font-weight:normal; text-decoration:none; color:#000000; padding:0 18px 0 18px;}
+.navi ul li a:hover{ color:#ffffff;}
+.banner_part{width:870px; height:288px; margin:0 auto;}
+.banner{width:870px; height:254px; float:left; margin-top:30px;}
+.shedow{width:870px; height:auto; float:left;}
+
+.middle_box{width:1000px; height:auto; float: left; margin-bottom:30px;}
+.middle_contaner{width:950px; height:auto; float:left; margin-left:38px;}
+
+.news_box{width:286px; height:auto; float:left; margin-right:40px;}
+.news_top{width:286px; height:46px; float:left; background:url(../images/heading_bg.png) no-repeat left top;}
+.head_text{width:270px; height:29px; float:left; margin-top:15px; font-family:"Myriad Pro"; font-size:14px; font-weight:bold; text-decoration:none; color:#000000; text-align:center; padding-top:2px;}
+.text_image{width:284px; height:227px; float:left; background:url(../images/text_box.png) no-repeat left top;}
+.conta{width:241px; height:186px; float:left; font-family:Tahoma; font-size:13px; font-weight:normal; text-decoration:none; color:#666666; text-align:justify; margin:25px 0 0 25px;}
+
+.best_offer{width:286px; height:auto; float:left; margin-right:40px;}
+.award_reward{width:286px; height:auto; float:left;}
+.sidebar{width:272px; height:auto; float:left; margin-right:10px;}
+.sidebar .sidebar_head{
+	font-size: 20px;
+	padding: 5px;
+	background: #F4A0A0;
+}
+
+.links {
+	background: #FAECC1;
+	padding: 0px 10px;
+}
+.links ul{
+	margin: 0px;
+	list-style: none;
+}
+.links ul li{
+	
+}
+.links ul li a{
+	color: #000;
+	text-decoration: none;
+	background: url(../images/arrow.png) no-repeat 0px 5px;
+	padding: 5px 5px 5px 30px;
+	display: block;
+}
+.inner_container{
+	width:705px; 
+	height:auto; 
+	float:left; 
+	border: 1px solid;
+}
+.inner_container h1{
+	font-size: 18px;
+	color: black;
+}
+.footer_cont{width:1000px; height:58px; float:left; background:url(../images/footer-bg.png) no-repeat left top;}
+
+.copy{width:500px; height:35px; float:left; font-family:Tahoma; font-size:14px; font-weight:normal; text-decoration:none; color:#000000; line-height:35px;}
+.copy a{font-family:Tahoma; font-size:14px; font-weight:normal; text-decoration:none; color:#000000;}
+.copy a:hover{font-family:Tahoma; font-size:14px; font-weight:normal; text-decoration:underline; color:#0033FF;}
+
+.right_footer{width:500px; height:35px; float:left; font-family:Tahoma; font-size:14px; font-weight:normal; text-decoration:none; color:#000000; line-height:35px; text-align:right;}
+.right_footer a{font-family:Tahoma; font-size:14px; font-weight:normal; text-decoration:none; color:#000000;}
+.right_footer a:hover{font-family:Tahoma; font-size:14px; font-weight:normal; text-decoration:underline; color:#0033FF;}
+
+
+
+/*------- About Us ------- */
+h3{font-family:"Myriad Pro"; font-size:15px; font-weight:bold; text-decoration:none; color:#999999;}
+h2{font-family:"Myriad Pro"; font-size:16px; font-weight:bold; text-decoration:none; color:#000000;}
+h1{ font-family:Tahoma; font-size:13px; font-weight:normal; text-decoration:none; color:#666666;}
+.about_box{width:286px; height:auto; float:left; margin-right:20px;}
+
+.about{width:622px; height:auto; float: left; text-align:justify; padding:10px 0 0 0;}
+.about_image{width:264px; height:190px; float:left; margin:12px 0 0 12px; background:#0033FF;}
+.conta_project{width:250px; height:166px; float:left; font-family:Tahoma; font-size:13px; font-weight:normal; text-decoration:none; color:#666666; text-align:justify; margin:15px 0 0 15px; padding:5px;}
+.more{width:65px; height:26px; float:right; margin-right:10px;}
+
+.apply{width:600px; height:auto; float:left;}
+.apply_now{width:430px; height:auto; float:left; text-align:center;}
+.plesafill{width:430px; height:auto; float:left; text-align:center; line-height:40px;}
+
+
+.career{width:622px; height:auto; float:left;}
+.fielld_career{width:500px; height:auto; float: left; margin-top:8px; margin-left:80px;}
+.fielld_career label{width:150px; float:left; font-family:"Myriad Pro"; font-size:14px; font-weight:normal; text-decoration:none; color:#7b7777;}
+.career_inp{width:200px; float:left; height:22px; border: solid 1px #d7d3d3; border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;}
+.submit{width:69px; height:23px; float:left; margin-left:200px;}
+.reset{width:69px; height:23px; float:left; margin-left:15px;}
+
+.selec{width:200px; float:left; height:22px; border: solid 1px #d7d3d3; border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;}
+.quary_inp{width:200px; float:left; height:52px; border: solid 1px #d7d3d3; border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;}
+
+/*------- About Us ------- */
+
+.msg{
+	padding:5px;
+	margin:0px;
+	color:#990000;
+	text-align:center;
+	border:#CCCCCC 1px solid;
+}
