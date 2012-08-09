@@ -1,6 +1,7 @@
 <?php
-require('includes/config.php');
-$auth->checkLogin();
+require('../includes/config.php');
+$auth->checkLogin('admin');
+
 ?>
 
 
@@ -9,13 +10,13 @@ $auth->checkLogin();
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Home - Better Life Infotech</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 <div id="wrapper">
 <div class="container">
-<?php include('header-inner.php');?>
+<?php include('header.php');?>
 
 
 <div class="sidebar">
@@ -24,7 +25,7 @@ $auth->checkLogin();
 <div class="inner_container">
 	<table width="100%">
 		<tr>
-			<td><h1>Hello Guest !</h1></td><td align="right"><h1>Login Id: 0001112</h1></td>
+			<td><h1>Hello Admin!</h1></td>
 		</tr>
 	</table>
 	

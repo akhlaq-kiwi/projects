@@ -123,3 +123,31 @@ h1{ font-family:Tahoma; font-size:13px; font-weight:normal; text-decoration:none
 	text-align:center;
 	border:#CCCCCC 1px solid;
 }
+
+.pagination{
+	
+}
+.pagination ul{
+	padding:0px;
+	margin:0px auto;
+	list-style:none;
+}
+.pagination ul li{
+	padding:0px;
+	margin:1px;
+	border:1px solid #999999;
+	float:left;
+}
+.pagination ul li a{
+	padding:5px;
+	margin:0px;
+	display:block;
+}
+.pagination ul li a:hover{
+	background:#02ACE9;
+	color:#fff;
+}
+.pagination ul li a.active{
+	background:#02ACE9;
+	color:#fff;
+}

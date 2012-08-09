@@ -42,7 +42,7 @@ class DB{
 		}
 	}
 	function update($table_name, $data_array = array(), $where=array(), $cond='and'){
-		unset($data_array['Submit']);
+		unset($data_array['submit']);
 		$data_array['update_date'] = date("Y-m-d H:i:s");
 		if(is_array($data_array) && count($data_array)){
 			$sql = 'update '.$table_name.' set ';
@@ -131,6 +131,11 @@ class DB{
 	function count($res){
 		return mysql_num_rows($res);
 	}
+
+	function getNumBySql($sql){
+		return mysql_num_rows($this->execute($sql));
+	}
+
 	function getRecordsOfTable($table='', $where=array(1=>1), $cond='and'){
 		if($table!=''){
 			$sql = "select * from ".$table." where 1";
@@ -171,22 +176,22 @@ class DB{
 		$start = ($_GET[page]-5<0?0:$_GET[page]-5);
 		$end = ($_GET[page]+5>$pages?$pages:$_GET[page]+5);
 		
-		if(strpos($url, '/page/'))
-			$url = substr($url, 0, strpos($url, '/page/'));
+		if(strpos($url, '?page='))
+			$url = substr($url, 0, strpos($url, '?page='));
 		
 		if($pages>1){
 			$this->pagination_string = '<div class="pagination"><ul>';
-			$this->pagination_string .= '<li><a href="'.$url.'/page/0">Start</a></li>';
-			$this->pagination_string .= '<li><a href="'.$url.'/page/'.($_GET['page']-1<0?0:$_GET['page']-1).'">Prev</a></li>';
+			$this->pagination_string .= '<li><a href="'.$url.'?page=0">Start</a></li>';
+			$this->pagination_string .= '<li><a href="'.$url.'?page='.($_GET['page']-1<0?0:$_GET['page']-1).'">Prev</a></li>';
 			if ($start>0)
 				$this->pagination_string .= '<li><a href="#">..</a></li>';
 			for($i=$start; $i<$end;$i++){
-				$this->pagination_string .= '<li><a '.($i==$_GET['page']?'class="active"':'').' href="'.$url.'/page/'.$i.'">'.($i+1).'</a></li>';	
+				$this->pagination_string .= '<li><a '.($i==$_GET['page']?'class="active"':'').' href="'.$url.'?page='.$i.'">'.($i+1).'</a></li>';	
 			}
 			if ($end<$pages)
 				$this->pagination_string .= '<li><a href="#">..</a></li>';
-			$this->pagination_string .= '<li><a href="'.$url.'/page/'.($_GET['page']+1>=($pages-1)?($pages-1):$_GET['page']+1).'">Next</a></li>';
-			$this->pagination_string .= '<li><a href="'.$url.'/page/'.($pages-1).'">Last</a></li>';
+			$this->pagination_string .= '<li><a href="'.$url.'?page='.($_GET['page']+1>=($pages-1)?($pages-1):$_GET['page']+1).'">Next</a></li>';
+			$this->pagination_string .= '<li><a href="'.$url.'?page='.($pages-1).'">Last</a></li>';
 			$this->pagination_string .= '<ul></div>';
 		}
 		$sql .= ' limit '.$this->PAGE_START.', '.$this->PAGE_SIZE;

@@ -9,6 +9,7 @@ include('classes/Auth.php');
 include('classes/User.php');
 include('classes/Image.php');
 
+$status_array = array(-1 => 'Blocked', 0 => 'Inactive', 1 => 'Active');
 
 
 ?>

@@ -38,9 +38,14 @@ class Auth extends General{
 	} 
 
 	function checkLogin($role=''){
+
 		if($_SESSION['USERID']==''){
 			$this->setMsg("You are not logged In, Please  login to view This page!");
-			$this->redirect("login.php?redirect=".$_SERVER['PHP_SELF']);
+			$this->redirect("login.php");
+		}
+		if($role!=$_SESSION['ROLE']){
+			$this->setMsg("You dont have permission to access this page!");
+			$this->redirect("login.php");
 		}
 	}
 	function checkLoginHome($url){
